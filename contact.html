@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- AUTHORS -->
+    <meta name="email" content="mois0044@algonquinlive.com">
+    <meta name="author1" content="Eduardo Manotas">
+    <meta name="author2" content="Yuta Akeno">
+    <meta name="author3" content="Andriy Moiseyenko">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <!-- PUZZLE GAME SOURCES -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <link rel="stylesheet" type="text/css" href="Puzzle/puzzle-style.css">
+    <!--  -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Contact | GameTro</title>
+</head>
+
+<body>
+    <!-- SUBMIT CONFIRMATION OVERLAY -->
+    <div class="contact-overlay">
+        <div class="contact-modal">
+            <h3>Thank you</h3>
+            <p class="text-large">We received your info:</p>
+            <p class="text-accent">Name: <span id="nameContactModal">Andrew</span></p>
+            <p class="text-accent">Email: <span id="emailContactModal">amoiseyenko@ukr.net</span></p>
+            <p class="text-accent">Game description: <span id="descriptionContactModal">This is a game</span></p>
+            <p class="text-accent">Game file: <span id="fileContactModal">game.zip</span></p>
+            <a href="contact.html">
+                <button class="pushable">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front">
+                        Great
+                    </span>
+                </button>
+            </a>
+
+        </div>
+    </div>
+
+
+    <div class="container">
+        <nav class="header">
+
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu" />
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+            <ul class="navigation">
+                <!-- Menu for PC -->
+                <li class=" nav-pc"><a class="hover-scale" href="library.html">Library</a></li>
+                <li> <a href="index.html" class="logo">
+                        <h2>GameTro</h2>
+                    </a></li>
+                <li class=" nav-pc"><a class="hover-scale" href="contact.html">Submit</a></li>
+            </ul>
+
+            <!-- Menu for Mobile-->
+            <div class="nav">
+                <ul class="menu">
+
+                    <li><a class="hover-scale text-large" href="library.html">Library</a></li>
+
+                    <li><a class="hover-scale text-large" href="contact.html">Submit</a></li>
+
+            </div>
+            </ul>
+        </nav>
+        <main>
+            <div class="wide-box shadow-pc margin-top">
+                <h2>Submit a game</h2>
+                <p class="text-large">Do you have a game you want to share with the world? Submit it here! You will be
+                    remarked as an author.</p>
+                <form action="#" method="get" id="formForSub">
+                    <div class="form-column">
+                        <label for="name">Your name</label>
+                        <input type="text" name="name" id="inputedName" placeholder="Your name">
+                        <br>
+                        <label for="email">Your email</label>
+                        <input type="text" name="email" id="email" placeholder="Your email">
+                    </div>
+                    <div class="form-column">
+                        <label for="gameDescription">Describe your game</label>
+                        <textarea id="gameDescription" rows="3" cols="40" name="gameDescription"
+                            placeholder="Tell us game name, details and everything you want us to know about your game"></textarea>
+                        <br>
+                        <label for="gameFile" id="gameFile-upload">
+                            Upload your game
+                            <img src="images/all-game-button.png" alt="upload button" id="upload-image">
+
+
+                            <input id="gameFile" type="file" name="file" multiple >
+                        </label>
+                    </div>
+                    <!-- <input type="submit" value="Submit"> -->
+
+                    <button class="pushable">
+                        <span class="shadow"></span>
+                        <span class="edge"></span>
+                        <span class="front">
+                            <input type="submit" value="Submit" id="submit">
+                        </span>
+                    </button>
+                </form>
+            </div>
+
+            <div class="wide-box shadow-pc margin-top" id="contactSection">
+                <h2>Contact us</h2>
+                <div class="contact-container">
+                    <div class="form-column">
+                        <h4>Yuta Akeno</h4>
+                        <p class="text-large">Game developer<br>yuta@email.com</p>
+                    </div>
+                    <div class="form-column">
+                        <h4>Eduardo M.</h4>
+                        <p class="text-large">Team programmer & manager<br>Edo@email.com</p>
+                    </div>
+                    <div class="form-column">
+                        <h4>Andrew M.</h4>
+                        <p class="text-large">Designer & front-end<br>Andrew@email.com</p>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <footer>
+            <div class="footer-flexbox">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="GameTro Logo">
+                </a>
+                <a href="library.html" class="text-large">Library</a>
+                <a href="contact.html" class="text-large">Submit game</a>
+                <a href="contact.html#contactSection" class="text-large">Contacts</a>
+                1
+                <div id="footer-socials">
+
+                    <a href="mailto:amoiseyenko@ukr.net?subject=Inquiry%20from%20website" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="images/email.png" alt="email logo">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <img src="images/facebook.png" alt="facebook logo">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                        <img src="images/twitter.png" alt="twitter logo">
+                    </a>
+                </div>
+            </div>
+            <div id="copyright">
+                <h5 class="text_small">All rights reserved, 2022</h5>
+            </div>
+        </footer>
+    </div>
+    <script src="./validation.js"></script>
+</body>
+
+</html>

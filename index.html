@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- AUTHORS -->
+    <meta name="email" content="mois0044@algonquinlive.com">
+    <meta name="author1" content="Eduardo Manotas">
+    <meta name="author2" content="Yuta Akeno">
+    <meta name="author3" content="Andriy Moiseyenko">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Main | GameTro</title>
+
+    <script src="./allGames_index.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Navigation bar -->
+
+        <nav class="header">
+
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu" />
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+            <ul class="navigation">
+                <!-- Menu for PC -->
+                <li class=" nav-pc"><a class="hover-scale" href="library.html">Library</a></li>
+                <li> <a href="index.html" class="logo">
+                        <h2>GameTro</h2>
+                    </a></li>
+                <li class=" nav-pc"><a class="hover-scale" href="contact.html">Submit</a></li>
+            </ul>
+
+            <!-- Menu for Mobile-->
+            <div class="nav">
+                <ul class="menu">
+
+                    <li><a class="hover-scale text-large" href="library.html">Library</a></li>
+
+                    <li><a class="hover-scale text-large" href="contact.html">Submit</a></li>
+
+            </div>
+            </ul>
+        </nav>
+        <!-- Site body -->
+        <main>
+            <div class="all-screen">
+                <h1 id="landing--first-row">Your best memories</h1>
+                <h4 id="landing-typed">At your fingertips.</h4>
+                <div id="pulse-play-button">
+                    <a href="library.html"><img id="landing--play-button" src="images/play-button.png"
+                            alt="play button"></a>
+                </div>
+            </div>
+            <div class="wide-box shadow-pc">
+                <h2>Choose your game</h2>
+                <div class="box-row">
+                    <div class="box-row-element">
+                        <!-- ALL LINKS NOW LEAD TO THE SAME PAGE. ADD JS -->
+                        <a href="play.html" id="puzzleGame">
+                            <img src="images/game-puzzle.png" alt="puzzle game image">
+                        </a>
+                    </div>
+                    <div class="box-row-element">
+                        <a href="play.html" id="snakeGame">
+                            <img src="images/game-snake.png" alt="snake game image">
+                        </a>
+                    </div>
+                    <div class="box-row-element">
+                        <a href="play.html" id="rockGame">
+                            <img src="images/game-stone.png" alt="stone game image">
+                        </a>
+                        <!--  -->
+                    </div>
+                </div>
+                <a href="library.html">
+                    <button class="pushable">
+                        <span class="shadow"></span>
+                        <span class="edge"></span>
+                        <span class="front">
+                            See all games
+                        </span>
+                    </button>
+                </a>
+            </div>
+            <div class="half-boxes-container">
+                <div class="half-box shadow-pc">
+                    <h2>Top Rankings</h2>
+                    <div class="game-selector">
+                        <img src="images/arrow.png" alt="arrow left" id="left-arrow">
+                        <p class="text-large" id="gameName-Ranking">Snake</p>
+                        <img src="images/arrow.png" alt="arrow right" id="right-arrow">
+                    </div>
+                    <div class="table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Player</th>
+                                    <th>Score</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Yut@</td>
+                                    <td>432</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Ed0</td>
+                                    <td>402</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Andr3w</td>
+                                    <td>398</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Anna</td>
+                                    <td>364</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Joey</td>
+                                    <td>355</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="half-box shadow-pc">
+                    <h2>Retro game news</h2>
+
+                    <span id="loading">Loading...</span>
+                    <div id="news">
+                        <!-- API OUTPUT -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="wide-box shadow-pc">
+                <section>
+                    <h2>Share your game</h2>
+
+                    <p class="text-large">This project is created by a group of passionate web developers.
+                        If you create web games or have a one created - submit it and we will add it into our game
+                        library, so everyone in the world can enjoy it!</p>
+                </section>
+                <a href="contact.html">
+                    <button class="pushable">
+                        <span class="shadow"></span>
+                        <span class="edge"></span>
+                        <span class="front">
+                            Share
+                        </span>
+                    </button>
+                </a>
+            </div>
+            <div class="wide-box shadow-pc">
+                <section>
+                    <h2>About us</h2>
+                    <p class="text-large">Time flies. Ups and downs are the way of the world. When something new is
+                        born, something old disappears. But we can't stand the loss of good things... Let's give the
+                        retro games we love a chance!
+                        After a difficult day… yeah, we want to be nostalgic with retro games tonight!
+                        The GameTro community is for everyone in the world.
+                        Yes, our mission is to give retro games everlasting life, and to pass legacy on to future
+                        generations. Unite people with the same interests and remind them that the good times when they
+                        used to play these
+                        games didn’t pass. It’s still your best time!
+                        Connect the world, connect generations with us.</p>
+                </section>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <div class="footer-flexbox">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="GameTro Logo">
+                </a>
+
+                <a href="library.html" class="text-large">Library</a>
+                <a href="contact.html" class="text-large">Submit game</a>
+                <a href="contact.html#contactSection" class="text-large">Contacts</a>
+
+                <div id="footer-socials">
+
+                    <a href="mailto:amoiseyenko@ukr.net?subject=Inquiry%20from%20website" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="images/email.png" alt="email logo">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/facebook.png" alt="facebook logo">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                        <img src="images/twitter.png" alt="twitter logo">
+                    </a>
+                </div>
+            </div>
+            <div id="copyright">
+                <h5 class="text_small">All rights reserved, 2022</h5>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./gameApi/gameApi.js"></script>
+</body>
+
+</html>

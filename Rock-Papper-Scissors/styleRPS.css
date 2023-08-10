@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'pixel';
+    src: url(SHPinscher-Regular.otf);
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: pixel, sans-serif;
+    background-color: rgb(0, 8, 32);
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    /* margin-bottom: 100px; */
+    height: 400px;
+    /* width: 100%; */
+
+}
+
+
+/* h1 {
+    font-size: 50px;
+    margin: 0em 0em;
+    padding: 40px 0px;
+    color :rgb(229, 229, 96);
+    background-color: rgb(17, 24, 45);
+    width: 100%;
+} */
+
+#scores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1px;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+
+.gameContainer {
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose {
+    font-size: 1em;
+    color: rgb(229, 229, 96);
+}
+
+#buttons {
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 1em 1em;
+}
+
+#rock, #paper, #scissor {
+    font-size: 4em;
+    background-color: transparent;  
+    border-radius: 15px;
+}
+
+#rock:hover, #paper:hover, #scissor:hover {
+    background-color: #777;
+    color: #fff;
+}
+
+
+#result {
+    /* padding: 1em 1em; */
+    color: white;
+    /* font-size: 2em; */
+}
+
+.finalResult {
+    margin: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    text-align: center;
+    
+    
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+
+
+
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+
+.overlay {
+    position: fixed; /* Positioning and size */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128,128,128,0.5); /* color */
+    display: none; /* making it hidden by default */
+  }
+
+  .modal {
+    position: fixed; /* positioning in center of page */
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    height: 150px; /* size */
+    width: 300px;
+    background-color: gray; /* background color */
+    border-radius: 25px;
+  }
+  
+
+
+

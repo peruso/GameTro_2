@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- AUTHORS -->
+    <meta name="email" content="mois0044@algonquinlive.com">
+    <meta name="author1" content="Eduardo Manotas">
+    <meta name="author2" content="Yuta Akeno">
+    <meta name="author3" content="Andriy Moiseyenko">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <!-- PUZZLE GAME SOURCES -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <link rel="stylesheet" type="text/css" href="Puzzle/puzzle-style.css">
+    <!--  -->
+
+
+    <!-- JQUERY -->
+    <script src="./jquery-3.6.1.min.js"></script>
+
+    <!-- ALL GAMES FUNCTIONALITY -->
+    <script src="./allGames.js" defer></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>All games | GameTro</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="header">
+
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu" />
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+            <ul class="navigation">
+                <!-- Menu for PC -->
+                <li class=" nav-pc"><a class="hover-scale" href="library.html">Library</a></li>
+                <li> <a href="index.html" class="logo">
+                        <h2>GameTro</h2>
+                    </a></li>
+                <li class=" nav-pc"><a class="hover-scale" href="contact.html">Submit</a></li>
+            </ul>
+
+            <!-- Menu for Mobile-->
+            <div class="nav">
+                <ul class="menu">
+
+                    <li><a class="hover-scale text-large" href="library.html">Library</a></li>
+
+                    <li><a class="hover-scale text-large" href="contact.html">Submit</a></li>
+
+            </div>
+            </ul>
+        </nav>
+        <main>
+            <div class="wide-box shadow-pc margin-top">
+                <h2>Game library</h2>
+                <div class="box-row">
+                    <div class="box-row-element">
+                        <!-- HERE EVERY GAME MUST BE DISPLAYED DINAMICALLY -->
+                        <!-- FOR NOW ALL LINKS ARE THE SAME -->
+                        <a href="play.html" id="puzzleGame">
+                            <img src="images/game-puzzle.png" alt="puzzle game image">
+                        </a>
+                    </div>
+                    <div class="box-row-element">
+                        <a href="play.html" id="snakeGame">
+                            <img src="images/game-snake.png" alt="snake game image">
+                        </a>
+                    </div>
+                    <div class="box-row-element">
+                        <a href="play.html" id="rockGame">
+                            <img src="images/game-stone.png" alt="stone game image">
+                        </a>
+                    </div>
+                </div>
+                <div class="box-row">
+                    <div class="box-row-element">
+                        <img src="images/inDev.png" alt="game in production">
+                    </div>
+                    <div class="box-row-element">
+                        <img src="images/inDev.png" alt="game in production">
+                    </div>
+                    <div class="box-row-element">
+                        <img src="images/inDev.png" alt="game in production">
+                    </div>
+                </div>
+                <div class="box-row">
+                    <div class="box-row-element">
+                        <img src="images/inDev.png" alt="game in production">
+                    </div>
+                    <div class="box-row-element">
+                        <img src="images/inDev.png" alt="game in production">
+                    </div>
+                    <div class="box-row-element">
+                        <img src="images/inDev.png" alt="game in production">
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+        <footer>
+            <div class="footer-flexbox">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="GameTro Logo">
+                </a>
+                <a href="library.html" class="text-large">Library</a>
+                <a href="contact.html" class="text-large">Submit game</a>
+                <a href="contact.html#contactSection" class="text-large">Contacts</a>
+
+                <div id="footer-socials">
+
+                    <a href="mailto:amoiseyenko@ukr.net?subject=Inquiry%20from%20website" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="images/email.png" alt="email logo">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <img src="images/facebook.png" alt="facebook logo">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                        <img src="images/twitter.png" alt="twitter logo">
+                    </a>
+                </div>
+            </div>
+            <div id="copyright">
+                <h5 class="text_small">All rights reserved, 2022</h5>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
